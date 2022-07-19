@@ -42,7 +42,7 @@ body {
    transform: scale(1.1);
    transition: all ease 0.2s;
 }
-main button {
+button {
     border: none;
     height: 30px;
     width: 90px;
@@ -53,7 +53,7 @@ main button {
     border: #000 1px solid;
     
 }
-main button:hover {color: #fff;
+button:hover {color: #fff;
     background-color: #000;
     transition: all ease 0.3s;
 }
@@ -66,6 +66,7 @@ main button:hover {color: #fff;
     border-radius: 15px;
     height: 70px;
     align-items: center;
+    display: block;
 }
 .history {
     color: #fff;

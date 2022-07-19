@@ -1,4 +1,5 @@
 const history = document.querySelector(".history");
+const dashboard = document.querySelector(".dashboard");
 const historyCleaner = document.querySelector(".history-cleaner");
 
 const resultBox = document.querySelector("#ResultBox");
@@ -55,8 +56,10 @@ function win() {
   winLog++;
   winSound.play();
   localStorage.setItem("winLog", JSON.stringify(winLog));
+  gameResult.innerText = `You Win`;
   resultBox.style.display = "flex";
-  gameResult.innerText = `You Win`
+  dashboard.style.display = "none";
+  document.querySelector(".container").style.display = "none";
   gameResult.style.color = "blue";
   youBox.children[0].src = `assets/${event.target.id}.png`;
   cpuBox.children[0].src = `assets/${computerChoice}.png`;
@@ -65,8 +68,10 @@ function lose() {
   loseLog++;
   loseSound.play();
   localStorage.setItem("loseLog", JSON.stringify(loseLog));
+  gameResult.innerText = `You lose`;
   resultBox.style.display = "flex";
-  gameResult.innerText = `You lose`
+  dashboard.style.display = "none";
+  document.querySelector(".container").style.display = "none";
   gameResult.style.color = "red";
   youBox.children[0].src = `assets/${event.target.id}.png`;
   cpuBox.children[0].src = `assets/${computerChoice}.png`;
@@ -75,8 +80,10 @@ function draw() {
   drawLog++;
   drawSound.play();
   localStorage.setItem("drawLog", JSON.stringify(drawLog));
-  gameResult.innerText = `Draw`
-  resultBox.style.display = "flex";
+  resultBox.innerText = `Draw`;
+  gameResult.style.display = "flex";
+  dashboard.style.display = "none";
+  document.querySelector(".container").style.display = "none";
   youBox.children[0].src = `assets/${event.target.id}.png`;
   cpuBox.children[0].src = `assets/${computerChoice}.png`;
 }
