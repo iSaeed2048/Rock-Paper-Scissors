@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/scissors1.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/scissors1.png" type="image/x-icon" />
+    <meta name="theme-color" content="#263238" />
+  </head>
+  <body>
+    <p id class="game-name">Rock Paper Scissors Game!</p>
+    <main class="container">
+      <div id="ResultBox">
+        <div id="YouBox">
+          <img src="" alt="" class="mini-pic" />
+          <p>YOU</p>
+        </div>
+        <div>
+          <p id="gameResult"></p>
+          <button id="rematch">Rematch</button>
+        </div>
+        <div id="CpuBox">
+          <img src="" alt="" class="mini-pic" />
+          <p>CPU</p>
+        </div>
+      </div>
+
+      <div class="images">
+        <img src="assets/paper1.png" alt="" id="paper" class="userSelect" />
+        <img src="assets/rock1.png" alt="" id="rock" class="userSelect" />
+        <img
+          src="assets/scissors1.png"
+          alt=""
+          id="scissors"
+          class="userSelect"
+        />
+      </div>
+    </main>
+    <div class="dashboard">
+      <p class="history"></p>
+      <a href="" class="history-cleaner">Click for reset history</a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
