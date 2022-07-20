@@ -80,8 +80,8 @@ function draw() {
   drawLog++;
   drawSound.play();
   localStorage.setItem("drawLog", JSON.stringify(drawLog));
-  resultBox.innerText = `Draw`;
-  gameResult.style.display = "flex";
+  gameResult.innerText = `Draw`;
+  resultBox.style.display = "flex";
   dashboard.style.display = "none";
   document.querySelector(".container").style.display = "none";
   youBox.children[0].src = `assets/${event.target.id}.png`;
