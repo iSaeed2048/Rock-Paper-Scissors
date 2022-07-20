@@ -1,3 +1,12 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('assets/background.png');
+}
 #ResultBox {
     background-color: #fff;
     position: absolute;
@@ -15,18 +24,11 @@
 #YouBox, #CpuBox {
     text-align: center;
 }
+#gameResult {
+    text-align: center;
+}
 .mini-pic {
     width: 30%;
-}
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body {
-    background-image: url('assets/background.png');
 }
 .container , .images{
     display: flex;
@@ -111,14 +113,11 @@ button:hover {color: #fff;
   font-size: 20px;
   text-align: center;
 }
-
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
-
-
 @media (max-width: 480px){ /* Mobile */
     .images {
         position: fixed;
@@ -126,34 +125,21 @@ button:hover {color: #fff;
         left: 50%;
         transform: translate(-50%, -50%);
         display: grid;
-        margin-top: 35px;
+        margin-top: 45px;
     }
     .images .userSelect {
         width: auto;
         height: 30vh;
     }
     .dashboard {
-        margin-top: 15px;
+        margin-top: 10px;
     }
-    .gameover img, .draw img, .win img {
-        width: 30vw;
+    .mini-pic {
+        width: 20vw;
         height: auto;
-    }
-    .gameover p, .draw p, .win p {
-        font-size: 1rem;
+        padding: 0px 10px;
     }
     .game-name {
         font-size: 1rem;
     }
 }
-
-/* @media (min-width:481px) and (max-width: 768px){ Tablet */
-    /* div { */
-        /* background: blue; */
-    /* } */
-/* } */
-/* @media (min-width:769px) { Loptops & Desktop */
-    /* div { */
-        /* background: blueviolet; */
-    /* } */
-/* } */
