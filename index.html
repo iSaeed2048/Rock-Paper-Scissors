@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="icon" href="img/scissors.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/scissors.png" type="image/x-icon" />
+    <!-- <meta name="theme-color" content="#263238" /> -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="neonText">Rock Paper Scissors</h1>
+      <div class="container">
+        <div class="rock">
+          <img src="img/rock.png" alt="rock" />
+        </div>
+        <div class="paper">
+          <img src="img/paper.png" alt="paper" />
+        </div>
+        <div class="scissors">
+          <img src="img/scissors.png" alt="scissors" />
+        </div>
+      </div>
+      <div class="result">
+        <p></p>
+        <span>Click here for reset history.</span>
+      </div>
+      <div class="show-result">
+        <div>
+          <div>
+            <div>
+              <img id="user-choice" src="" alt="user-choice" /><span>YOU</span>
+            </div>
+            <div><img id="result-game" src="" alt="result-game" /></div>
+            <div>
+              <img id="cpu-choise" src="" alt="cpu-choise" /><span>CPU</span>
+            </div>
+          </div>
+          <button class="rematch">REMATCH</button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
